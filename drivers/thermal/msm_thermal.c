@@ -5017,7 +5017,7 @@ static void interrupt_mode_init(void)
 		return;
 
 	if (polling_enabled) {
-		polling_enabled = 0;
+		polling_enabled = 1;
 		create_sensor_zone_id_map();
 		disable_msm_thermal();
 		hotplug_init();
